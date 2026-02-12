@@ -107,7 +107,7 @@
   </style>
 </head>
 <body>
-  <form class="card" onsubmit="event.preventDefault(); alert('Mensaje enviado. Prometemos leerlo antes que tus correos de la universidad.');">
+  <form action="/store" method="GET" class="card">
     <h2>Contáctanos</h2>
 
     <label for="email">Correo electrónico</label>
@@ -116,7 +116,7 @@
     <label for="mensaje">Mensaje</label>
     <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
 
-    <button type="submit">Contáctanos</button>
+    <button type="submit">Enviar mensaje</button>
 
     <div class="footer">Responderemos lo más pronto posible</div>
   </form>

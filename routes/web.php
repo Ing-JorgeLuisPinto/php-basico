@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -15,10 +16,11 @@ Route::get('/contactanos', function () {
     return view("form");
 
 });
+Route::get('/store', function (Request $request) {
+    print_r($request->all());
 
 
-
-
+});
 
 
 
