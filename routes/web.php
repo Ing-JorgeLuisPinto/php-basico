@@ -10,6 +10,19 @@ Route::get('/mi-nombre', function () {
     return "Jorge Luis Pinto";
 });
 
+Route::get('/contactanos', function () {
+
+    return view("form");
+
+});
+
+
+
+
+
+
+
+
 Route::get('/php-basico', function () {
 
     echo "<h1 style= 'color:red;'> Aprendiendo PHP </h1>";
